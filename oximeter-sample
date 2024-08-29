@@ -42,3 +42,5 @@ for patient in patients:
     result = evaluate_sleep_apnea_test(patient["sleep_score"])
     print(f"Patient: {patient['name']}, Sleep Score: {patient['sleep_score']} - {result}")
 
+
+
