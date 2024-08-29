@@ -1,0 +1,44 @@
+a sample program in python to trigger a list of next steps for the customer service team based on the readings of an oximeters sleep score 
+if the oximeter reads 0, customer service is instructed to repeat the test, if it is above 70 the patient has tested negative and if it is les than 50 the patient requires call back 
+
+
+def evaluate_sleep_apnea_test(sleep_score):
+    if sleep_score == 0:
+        return "Test needs to be repeated."
+    elif sleep_score < 50:
+        return "Patient requires a callback."
+    elif sleep_score > 70:
+        return "Patient is negative for sleep apnea."
+    else:
+        return "Sleep score is inconclusive, further analysis needed."
+
+# Example usage:
+sleep_score = int(input("Enter the sleep score: "))
+result = evaluate_sleep_apnea_test(sleep_score)
+print(result)
+
+def evaluate_sleep_apnea_test(sleep_score):
+    if sleep_score == 0:
+        return "Test needs to be repeated."
+    elif sleep_score < 50:
+        return "Patient requires a callback."
+    elif sleep_score > 70:
+        return "Patient is negative for sleep apnea."
+    else:
+        return "Sleep score is inconclusive, further analysis needed."
+
+# Example patient data
+patients = [
+    {"name": "John Doe", "sleep_score": 45},
+    {"name": "Jane Smith", "sleep_score": 75},
+    {"name": "Emily Davis", "sleep_score": 30},
+    {"name": "Michael Brown", "sleep_score": 0},
+    {"name": "Sarah Wilson", "sleep_score": 55},
+    {"name": "David Johnson", "sleep_score": 85},
+]
+
+# Evaluate each patient
+for patient in patients:
+    result = evaluate_sleep_apnea_test(patient["sleep_score"])
+    print(f"Patient: {patient['name']}, Sleep Score: {patient['sleep_score']} - {result}")
+
