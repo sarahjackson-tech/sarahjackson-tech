@@ -29,12 +29,12 @@ def evaluate_sleep_apnea_test(sleep_score):
 
 # Example patient data
 patients = [
-    {"name": "John Doe", "sleep_score": 45},
-    {"name": "Jane Smith", "sleep_score": 75},
-    {"name": "Emily Davis", "sleep_score": 30},
+    {"name": "Daragh Murphy", "sleep_score": 45},
+    {"name": "Sarah Jackson", "sleep_score": 75},
+    {"name": "Conor Cassin", "sleep_score": 30},
     {"name": "Michael Brown", "sleep_score": 0},
-    {"name": "Sarah Wilson", "sleep_score": 55},
-    {"name": "David Johnson", "sleep_score": 85},
+    {"name": "Jackie Wilson", "sleep_score": 55},
+    {"name": "Hannah Dunn", "sleep_score": 85},
 ]
 
 # Evaluate each patient
