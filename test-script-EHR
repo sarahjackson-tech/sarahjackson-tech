@@ -1,0 +1,173 @@
+### Sample Test Script for a Clinical Application
+
+Below is a sample test script for an Electronic Medical Record (EMR) system written by myself as part of a programming for medical devices module. The script is designed to verify key functionalities such as patient registration, medication orders, and lab test requests.
+
+---
+
+### **Test Script: EMR System - Day-to-Day Workflow Testing**
+
+**Objective**: To ensure that the essential functions of the EMR system are working as expected, including patient registration, medication order entry, lab test requests, and discharge processes.
+
+#### **Test Details:**
+
+- **System Name**: EMR System (Electronic Medical Records)
+- **Module**: Patient Management, Medication Orders, Laboratory
+- **Tester**: Clinical Application Analyst
+- **Test Date**: [Insert Date]
+- **Environment**: Test (QA) Environment
+- **Test Script ID**: EMR-TS-001
+- **Pre-requisites**: User should have the correct roles/permissions to perform the test.
+
+---
+
+### **Test Case 1: Patient Registration**
+
+#### **Objective**: Ensure that a new patient can be successfully registered in the EMR system.
+
+1. **Steps**:
+   1. Log into the EMR system with valid credentials.
+   2. Navigate to the **Patient Registration** module.
+   3. Click on **Add New Patient**.
+   4. Enter patient details: Name, Date of Birth, Gender, Address, Phone Number, etc.
+   5. Select **Save** and confirm registration.
+
+2. **Expected Results**:
+   - The patient should be successfully registered, and a unique patient ID should be generated.
+   - The patient details should be correctly displayed in the system.
+   - The system should provide a confirmation message.
+
+3. **Actual Results**:  
+   - [To be filled during testing]
+
+4. **Status**: [Pass/Fail]
+
+5. **Notes/Issues**:  
+   - [To be filled during testing]
+
+---
+
+### **Test Case 2: Medication Order Entry**
+
+#### **Objective**: Verify that a physician can successfully order medications for a patient.
+
+1. **Steps**:
+   1. Log into the EMR system as a physician.
+   2. Search for an existing patient using their Patient ID.
+   3. Navigate to the **Orders** section of the patient chart.
+   4. Click on **New Medication Order**.
+   5. Enter the medication details (e.g., Drug Name, Dosage, Route, Frequency).
+   6. Review the medication order and click **Submit**.
+   
+2. **Expected Results**:
+   - The medication order should be successfully submitted and appear in the patient’s medication history.
+   - The order should be visible in the pharmacy queue.
+   - No errors or validation issues should occur.
+
+3. **Actual Results**:  
+   - [To be filled during testing]
+
+4. **Status**: [Pass/Fail]
+
+5. **Notes/Issues**:  
+   - [To be filled during testing]
+
+---
+
+### **Test Case 3: Lab Test Request**
+
+#### **Objective**: Ensure that a lab test can be successfully requested for a patient.
+
+1. **Steps**:
+   1. Log into the EMR system and search for the patient by Patient ID.
+   2. Navigate to the **Orders** section in the patient chart.
+   3. Click on **New Lab Order**.
+   4. Select the required test (e.g., CBC, Blood Glucose, Urinalysis).
+   5. Specify the priority (e.g., STAT, Routine).
+   6. Submit the lab order for processing.
+
+2. **Expected Results**:
+   - The lab test request should be successfully submitted and appear in the lab order queue.
+   - The order should show up in the patient's order history.
+   - No validation errors should appear.
+
+3. **Actual Results**:  
+   - [To be filled during testing]
+
+4. **Status**: [Pass/Fail]
+
+5. **Notes/Issues**:  
+   - [To be filled during testing]
+
+---
+
+### **Test Case 4: Patient Discharge**
+
+#### **Objective**: Validate that a patient can be successfully discharged from the hospital.
+
+1. **Steps**:
+   1. Log into the EMR system and search for the admitted patient.
+   2. Navigate to the **Discharge** module.
+   3. Confirm that all discharge orders (e.g., medications, follow-up tests) are complete.
+   4. Select the discharge date and reason.
+   5. Click **Submit** to discharge the patient.
+
+2. **Expected Results**:
+   - The patient’s status should update to **Discharged**.
+   - The patient should no longer appear in the **Admitted Patients** list.
+   - The discharge summary should be generated and stored in the patient’s chart.
+
+3. **Actual Results**:  
+   - [To be filled during testing]
+
+4. **Status**: [Pass/Fail]
+
+5. **Notes/Issues**:  
+   - [To be filled during testing]
+
+---
+
+### **Test Case 5: Viewing Patient History**
+
+#### **Objective**: Verify that the patient’s medical history can be accessed after discharge.
+
+1. **Steps**:
+   1. Log into the EMR system.
+   2. Search for a discharged patient by their Patient ID.
+   3. Navigate to the **Patient History** section.
+   4. Review the past medical history, medication history, and lab results.
+
+2. **Expected Results**:
+   - The system should display the patient’s full medical history.
+   - The data should be accurate and complete without any missing information.
+
+3. **Actual Results**:  
+   - [To be filled during testing]
+
+4. **Status**: [Pass/Fail]
+
+5. **Notes/Issues**:  
+   - [To be filled during testing]
+
+---
+
+### **Summary of Test Results**
+
+| Test Case ID | Description                  | Status (Pass/Fail) | Notes/Issues                       |
+|--------------|------------------------------|--------------------|------------------------------------|
+| EMR-TS-001   | Patient Registration          |                    |                                    |
+| EMR-TS-002   | Medication Order Entry        |                    |                                    |
+| EMR-TS-003   | Lab Test Request              |                    |                                    |
+| EMR-TS-004   | Patient Discharge             |                    |                                    |
+| EMR-TS-005   | Viewing Patient History       |                    |                                    |
+
+---
+
+### **Post-Test Actions:**
+
+1. Document any issues encountered during the testing process.
+2. Report failed tests to the development team for bug fixes.
+3. Retest any failed test cases after bug fixes are implemented.
+
+---
+
+This sample script provides a clear step-by-step guide for testing critical clinical workflows in a hospital’s EMR system. The tests ensure that key functionalities are functioning properly in day-to-day use, ensuring smooth operations and patient safety.
