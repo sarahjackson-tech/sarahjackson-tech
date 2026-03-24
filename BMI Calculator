@@ -183,3 +183,10 @@ if __name__ == "__main__":
 </form>
 
 <a href="/register">Register</a>
+
+<h2>Register</h2>
+<form method="POST">
+    <input name="username" required>
+    <input name="password" type="password" required>
+    <button type="submit">Register</button>
+</form>
